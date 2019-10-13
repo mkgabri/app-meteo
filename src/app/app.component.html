@@ -1,0 +1,55 @@
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://bootswatch.com/4/materia/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card card-body">
+            <header class="mx-auto"><h1>Meteo</h1></header>
+            <form action="" (submit)="submitLocation(cityName, countryCode)">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="City name" #cityName>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Country code" #countryCode>
+              </div>
+              <button class="btn btn-primary btn-block mt-2">
+                Get weather
+              </button>
+            </form>
+          </div>
+        </div>
+        <div *ngIf="weather" class="col-md-6 mx-auto">
+          <div class="card card-body">
+            <header class="cityName">{{weather.name}}</header>
+            <p class="cityTemp">{{weather.main.temp}} °C</p>
+            <div class="col-md-12 space-evenly">
+              <span>Vento: {{weather.wind.speed}}</span>
+              <span>Visibilità: {{weather.visibility}}</span>
+              <span>Umidità: {{weather.main.humidity}}%</span>
+            </div>  
+            <div>
+              <p>Descrizione: {{weather.weather[0].description}} 
+                <!-- <img src="http://openweathermap.org/img/wn/{{weather.weather[0].icon}}@2x.png" id="imagebox" alt="meteo icon"> -->
+                </p>
+              <!-- <p>Alba: {{sunRise}}</p> -->
+              <p></p>
+            </div>  
+          </div>
+        </div>
+      </div>
+    </div>
+    
+</body>
+
+
+
+

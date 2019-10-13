@@ -1,0 +1,26 @@
+html, body {
+  height: 100vh;
+}
+
+body {
+  background-color: #1e3799;
+}
+
+p {
+  font-family: Lato;
+}
+
+.cityName, .cityTemp {
+  color: black;
+  font-size: 3em;
+  text-align: center;
+}
+
+.cityTemp {
+  font-size: 2em;
+}
+
+.space-evenly {
+  display: flex;
+  justify-content: space-evenly;
+}
