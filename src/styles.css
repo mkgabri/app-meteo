@@ -1,1 +1,10 @@
 /* Add application styles & imports to this file! */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+html, body {
+  height: 100vh;
+}
+
+body {
+  background-color: #1e3799;
+}

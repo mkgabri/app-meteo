@@ -1,14 +1,4 @@
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://bootswatch.com/4/materia/bootstrap.min.css">
-    <title>Document</title>
-</head>
-<body>
-
-
     <div class="container p-4">
       <div class="row">
         <div class="col-md-6">
@@ -36,7 +26,7 @@
               <span>Visibilità: {{weather.visibility}}</span>
               <span>Umidità: {{weather.main.humidity}}%</span>
             </div>  
-            <div>
+            <div class="col-md-12 text-center">
               <p>Descrizione: {{weather.weather[0].description}} 
                 <!-- <img src="http://openweathermap.org/img/wn/{{weather.weather[0].icon}}@2x.png" id="imagebox" alt="meteo icon"> -->
                 </p>
@@ -48,7 +38,6 @@
       </div>
     </div>
     
-</body>
 
 
 
